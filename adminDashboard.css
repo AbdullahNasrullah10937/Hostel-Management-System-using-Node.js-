@@ -1,0 +1,137 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #000; /* Black background */
+  color: white;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background: linear-gradient(135deg, #212121, #333); /* Gradient sidebar */
+  color: gold;
+  width: 300px;
+  padding: 30px;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.sidebar h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 40px;
+  position: relative;
+  color: gold;
+}
+
+.sidebar h2::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 3px;
+  background: gold;
+  margin: 5px auto;
+  transition: width 0.3s ease;
+}
+
+.sidebar h2:hover::after {
+  width: 80%;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+/* Button Styling */
+.sidebar ul li button {
+  background: linear-gradient(45deg, #f0a500, #ffce00); /* Gold gradient */
+  color: black;
+  border: none;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(240, 165, 0, 0.4);
+}
+
+.sidebar ul li button:hover {
+  background: #f0a500; /* Pure gold background */
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(240, 165, 0, 0.6);
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 40px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  padding-bottom: 10px;
+}
+
+.header-left h1 {
+  font-size: 36px;
+  color: #f0a500; /* Gold color */
+}
+
+.header-left p {
+  color: #143998; /* Blue-green text */
+}
+
+.header-right img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid gold; /* Gold border */
+}
+
+/* Adjusted Dashboard Picture */
+.dashboard-picture {
+  margin-top: 40px;
+  text-align: center; /* Center the image */
+}
+
+.dashboard-picture img {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 10px;
+  border: 4px solid gold;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.dashboard-picture img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    text-align: center;
+  }
+}

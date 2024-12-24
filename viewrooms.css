@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('img/background.avif') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire screen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 80%;
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .back-button-container {
+    margin: 10px;
+  }
+  
+  .back-button-container a {
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  
+  .back-button-container a:hover {
+    background-color: #0056b3;
+  }
+  

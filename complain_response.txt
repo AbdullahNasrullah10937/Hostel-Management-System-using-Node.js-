@@ -1,0 +1,7 @@
+234,ok
+234,ok
+45,fd
+45,done
+78,ok g
+56,ok beta
+234,walikum salam

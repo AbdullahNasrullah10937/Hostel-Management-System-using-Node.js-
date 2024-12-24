@@ -1,0 +1,8 @@
+Monday,Lunch,Chicken Biryani,200,Dinner,Daal Chawal,150
+Tuesday,Lunch,Grilled Sandwich,180,Dinner,Mix Sabzi,140
+Wednesday,Lunch,Chicken Karahi,250,Dinner,Pulao,170
+Thursday,Lunch,Pasta Alfredo,220,Dinner,Chapli Kebab with Naan,260
+Friday,Lunch,Fish Curry with Rice,300,Dinner,Mutton Qorma,350
+Saturday,Lunch,Chicken Shawarma,200,Dinner,Beef Nihari,320
+Sunday,Lunch,Biryani with Raita,230,Dinner,Kofta Curry,210
+

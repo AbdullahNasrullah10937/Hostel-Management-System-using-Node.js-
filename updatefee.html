@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Fee</title>
+  <link rel="stylesheet" href="updatefee.css">
+</head>
+<body>
+  <div class="back-button-container">
+    <a href="adminDashboard.html">Back to Menu</a>
+  </div>
+  <div class="container">
+    <h1>Upload Fee</h1>
+    <div id="students-container">
+      <label for="students">Select Student:</label>
+      <select id="students" required>
+        <option value="" disabled selected>Select a student</option>
+      </select>
+    </div>
+    <div class="input-container">
+      <label for="fee">Fee Amount:</label>
+      <input type="number" id="fee" placeholder="Enter fee amount" required>
+    </div>
+    <button id="uploadFeeBtn">Upload Fee</button>
+    <div id="responseMessage"></div>
+  </div>
+  <div class="footer">
+    &copy; 2024 Hostel Nest | All Rights Reserved
+  </div>
+  <script src="updatefee.js"></script>
+</body>
+</html>

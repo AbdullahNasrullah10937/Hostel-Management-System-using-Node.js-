@@ -1,0 +1,3 @@
+32,do not spit on floor
+67,DO NOT RUIN THE GROUND
+100,do not touch plants

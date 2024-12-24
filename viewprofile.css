@@ -1,0 +1,71 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 400px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: 600;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .error-message {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .profile-table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .profile-table th, .profile-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .profile-table th {
+    background-color: #f2f2f2;
+  }
+  

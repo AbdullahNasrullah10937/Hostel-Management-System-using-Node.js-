@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allot and Remove Hostel</title>
+  <link rel="stylesheet" href="allothostel.css">
+  <style>
+    /* Styling for the back button */
+    .back-button {
+      position: absolute;
+      top: 30px;
+      left: 40px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      text-decoration: none;
+    }
+
+    .back-button:hover {
+      background-color: #0056b3;
+    }
+
+    .back-button i {
+      font-size: 18px;
+    }
+
+    .capacity-panel {
+      margin: 20px 0;
+      padding: 15px;
+      background-color: #004d7a;
+      color: #f1c40f;
+      border-radius: 5px;
+      text-align: center;
+    }
+
+    .capacity-panel span {
+      font-weight: bold;
+    }
+
+    /* New styles for the dropdown */
+    .room-dropdown {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+
+    .form-panel select {
+      width: 100%;
+      padding: 12px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .form-panel select:focus {
+      border-color: #004d7a; /* Blue border when focused */
+      outline: none;
+    }
+
+    .form-panel button {
+      background-color: #f1c40f;
+      color: black;
+      cursor: pointer;
+      border: none;
+    }
+
+    .form-panel button:hover {
+      background-color: #f39c12;
+      transform: scale(1.05);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background-color: #004d7a;
+      color: #f1c40f;
+      border-radius: 5px;
+    }
+
+    .capacity-panel, .data-panel {
+      margin: 20px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table th, table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    table th {
+      background-color: #004d7a;
+      color: #f1c40f;
+    }
+
+    table td {
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Back to Dashboard Button -->
+    <a href="adminDashboard.html" class="back-button">
+      <i>&larr;</i> Admin Dashboard
+    </a>
+
+    <header>
+      <h1>Hostel Room Management</h1>
+      <p>Allot and manage hostel rooms efficiently</p>
+    </header>
+    
+    <!-- Hostel Capacity Panel -->
+    <section class="capacity-panel">
+      <p>Hostel Capacity: <span id="maxCapacity">50</span></p>
+      <p>Available Rooms: <span id="availableRooms">50</span></p>
+    </section>
+    
+    <!-- Allotted Students Panel -->
+    <section class="data-panel">
+      <h2>Allotted Students</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Room Number</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="studentTable">
+          <!-- Dynamic rows will be added here -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Allot Room Form -->
+    <section class="form-panel">
+      <h2>Allot Room</h2>
+      <form id="allotForm">
+        <label for="studentId">Student ID:</label>
+        <input type="text" id="studentId" required>
+        
+        <label for="studentName">Name:</label>
+        <input type="text" id="studentName" required>
+        
+        <label for="roomNumber">Room Number:</label>
+        <select id="roomNumber" required class="room-dropdown">
+          <!-- Available rooms will be populated here -->
+        </select>
+        
+        <button type="submit">Allot Room</button>
+      </form>
+    </section>
+  </div>
+
+  <!-- JavaScript File -->
+  <script src="allotAndRemoveHostel.js"></script>
+</body>
+</html>

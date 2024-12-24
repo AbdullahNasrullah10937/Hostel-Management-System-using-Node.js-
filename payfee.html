@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pay Fee</title>
+  <link rel="stylesheet" href="payfee.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- Back to Menu Button -->
+   <div class="back-button-container">
+    <button onclick="window.location.href='userDashboard.html'" class="back-button">Back to Menu</button>
+  </div>
+  <div class="container">
+    <h1>Pay Fee</h1>
+
+    <div class="form-container">
+      <label for="userId">User ID:</label>
+      <input type="number" id="userId" placeholder="Enter your User ID">
+
+      <label for="userName">Name:</label>
+      <input type="text" id="userName" placeholder="Enter your Name">
+
+      <button id="checkFee">Check Fee</button>
+    </div>
+
+    <div id="feeDetails" class="fee-details" style="display: none;">
+      <p><strong>Fee Assigned:</strong> <span id="feeAmount"></span></p>
+
+      <label for="accountNumber">Account Number:</label>
+      <input type="number" id="accountNumber" placeholder="Enter your Account Number">
+      
+      <button id="payFee">Pay Fee</button>
+    </div>
+
+    <p id="statusMessage"></p>
+
+    <div class="footer">
+      &copy; 2024 Hostel Nest | All Rights Reserved
+    </div>
+  </div>
+
+  <script src="payfee.js"></script>
+</body>
+</html>

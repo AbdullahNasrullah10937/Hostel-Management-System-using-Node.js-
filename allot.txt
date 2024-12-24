@@ -1,0 +1,9 @@
+8,asad,1
+78,hasan,21
+5,abd,15
+12,sufi,3
+87,jutt,4
+13,wal,5
+69,ahmad,6
+456,ABDULLAH KHAN,49
+30,bilal,20

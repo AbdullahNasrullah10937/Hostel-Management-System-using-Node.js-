@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Profile</title>
+  <link rel="stylesheet" href="viewprofile.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>View Profile</h1>
+    <form id="viewProfileForm">
+      <label for="password">Enter Your Password:</label>
+      <input type="password" id="password" placeholder="Enter your password" required>
+      <button type="submit">View Profile</button>
+    </form>
+    <div id="errorMessage" class="error-message"></div>
+    <table id="profileTable" class="profile-table" style="display: none;">
+      <tr><th>Field</th><th>Value</th></tr>
+      <tr><td>Username</td><td id="username"></td></tr>
+      <tr><td>Password</td><td id="userPassword"></td></tr>
+      <tr><td>CNIC</td><td id="cnic"></td></tr>
+      <tr><td>Role</td><td id="role"></td></tr>
+      <tr><td>Gender</td><td id="gender"></td></tr>
+    </table>
+  </div>
+  <script src="viewprofile.js"></script>
+</body>
+</html>

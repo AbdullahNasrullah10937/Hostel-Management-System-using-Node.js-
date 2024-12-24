@@ -1,0 +1,8 @@
+Abdullahnasarullah,345,3330113857269,user,female
+hasan,234,3330113857269,user,female
+khunsha,7856,3330113857269,user,female
+
+zain,abdullah10937,3330113857269,user,male
+ahmad khalid,abc123,3330113857269,user,male
+ALI KHAN,ABCD567,3330113857269,user,male
+bilal,bilal123,3330113857269,user,male

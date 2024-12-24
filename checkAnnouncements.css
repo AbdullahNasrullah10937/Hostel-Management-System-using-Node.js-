@@ -1,0 +1,81 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('img/background.avif') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+  }
+  
+  /* Container Styling */
+  .container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+  
+  /* Heading */
+  h1 {
+    font-size: 2.5rem;
+    color: #f0c040;
+    margin-bottom: 30px;
+  }
+  
+  /* Announcements List */
+  .announcement-list {
+    text-align: left;
+  }
+  
+  .announcement-card {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .announcement-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .announcement-date {
+    font-size: 14px;
+    color: #cccccc;
+    margin-bottom: 8px;
+  }
+  
+  .announcement-text {
+    font-size: 16px;
+    color: #ffffff;
+  }
+  
+  /* Footer */
+  .footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #ccc;
+    font-size: 14px;
+  }
+  .back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f0c040; /* Golden color */
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #d4a230;
+    transform: scale(1.05);
+  }
+  

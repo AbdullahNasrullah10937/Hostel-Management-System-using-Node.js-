@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Complaints</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: url('img/background.avif') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    h1 {
+      color: #343a40;
+      margin-bottom: 20px;
+    }
+
+    .complaint-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    .complaint-table th, .complaint-table td {
+      border: 1px solid #dee2e6;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .complaint-table th {
+      background-color: #007bff;
+      color: white;
+    }
+
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    form input, form textarea, form button {
+      padding: 10px;
+      border: 1px solid #ced4da;
+      border-radius: 5px;
+      flex: 1;
+    }
+
+    form button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+      flex-basis: 150px;
+    }
+
+    form button:hover {
+      background-color: #218838;
+    }
+
+    .response-textarea {
+      flex: 100%;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .back-btn:hover {
+      background-color: #0056b3;
+    }
+     /* Footer */
+  .footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #403e3e;
+    font-size: 14px;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="adminDashboard.html" class="back-btn">Back to Menu</a>
+    <h1>Admin - Complaints</h1>
+    <table class="complaint-table" id="complaintTable">
+      <thead>
+        <tr>
+          <th>Complaint ID</th>
+          <th>Complaint Text</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Complaints will be dynamically loaded here -->
+      </tbody>
+    </table>
+
+    <h2>Respond to Complaint</h2>
+    <form id="responseForm">
+      <input type="text" id="complaintId" placeholder="Complaint ID" required>
+      <textarea id="responseText" placeholder="Enter your response..." class="response-textarea" required></textarea>
+      <button type="submit">Submit Response</button>
+    </form>
+  </div>
+  <div class="footer">
+    &copy; 2024 Hostel Nest | All Rights Reserved
+  </div>
+  <script src="adminComplaints.js"></script>
+</body>
+</html>

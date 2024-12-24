@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="userDashboard.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Sidebar Menu -->
+    <div class="sidebar">
+      <h2>User Menu</h2>
+      <ul>
+        <li><button onclick="location.href='viewprofile.html'">View Profile</button></li>
+        <li><button onclick="location.href='complain.html'">Complain</button></li>
+        <li><button onclick="location.href='checkAnnouncements.html'">Check Announcements</button></li>
+        <li><button onclick="location.href='checkRules.html'">Check Rules</button></li>
+        <li><button onclick="location.href='messmenu.html'">See Food Menu</button></li>
+        <li><button onclick="location.href='payFee.html'">Pay Fee</button></li>
+        <li><button onclick="location.href='login.html'">Logout</button></li>
+      </ul>
+    </div>
+
+    <!-- Header and Main Content -->
+    <div class="main-content">
+      <header>
+        <div class="header-left">
+          <h1 id="welcomeMessage">Welcome, User</h1>
+          <p>Your personalized dashboard</p>
+        </div>
+        <div class="header-right">
+          <img src="img/download.png" alt="User Icon">
+        </div>
+      </header>
+      <div class="dashboard-picture">
+        <img src="img/background.avif" alt="User Dashboard Image">
+      </div>
+      <button class="logout-btn" onclick="location.href='/logout'">Logout</button>
+    </div>
+  </div>
+</body>
+</html>

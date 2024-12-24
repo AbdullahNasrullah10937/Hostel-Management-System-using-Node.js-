@@ -1,0 +1,161 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #adb0af;
+    transition: background-color 0.3s ease; /* Smooth background transition */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #004d7a; /* Dark Blue */
+    color: #f1c40f; /* Golden */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth header transition */
+  }
+  
+  header:hover {
+    background-color: #006699; /* Lighter Blue */
+    color: #fff; /* White when hovered */
+  }
+  
+  .capacity-panel {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #004d7a;
+    color: #f1c40f;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow effect for the capacity panel */
+  }
+  
+  .capacity-panel span {
+    font-weight: bold;
+    color: #f39c12; /* Highlighted color for dynamic numbers */
+  }
+  
+  /* New styles for the dropdown */
+  .room-dropdown {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+  }
+  
+  .form-panel select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-panel select:focus {
+    border-color: #004d7a; /* Blue border when focused */
+    outline: none;
+  }
+  
+  .form-panel button {
+    background-color: #f1c40f;
+    color: black;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .form-panel button:hover {
+    background-color: #f39c12;
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container {
+    padding: 30px 40px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  table th {
+    background-color: #004d7a;
+    color: #f1c40f;
+  }
+  
+  table td {
+    background-color: #fff;
+  }
+  
+  table th:hover, table td:hover {
+    background-color: #f1c40f; /* Golden hover effect */
+    color: #004d7a; /* Dark Blue */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form label {
+    font-weight: bold;
+    color: #004d7a; /* Dark Blue */
+  }
+  
+  form input, form button {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+  }
+  
+  form input {
+    background-color: #fff;
+  }
+  
+  form input:focus {
+    border-color: #004d7a; /* Blue border when focused */
+    outline: none;
+  }
+  
+  form button {
+    background-color: #f1c40f; /* Golden */
+    color: black;
+    cursor: pointer;
+    border: none;
+  }
+  
+  form button:hover {
+    background-color: #f39c12; /* Darker Golden on hover */
+    transform: scale(1.05); /* Button zoom effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle button shadow */
+  }
+  
+  form button:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(255, 159, 64, 0.8); /* Focus effect */
+  }
+  
+  table {
+    transition: box-shadow 0.3s ease;
+  }
+  
+  table:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Table shadow effect on hover */
+  }
+  
+  

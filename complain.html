@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complaints</title>
+  <link rel="stylesheet" href="complain.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>User Complaints</h1>
+
+    <!-- Back to Menu Button -->
+    <div class="back-button-container">
+      <button onclick="window.location.href='userDashboard.html'" class="back-button">Back to Menu</button>
+    </div>
+
+    <div class="form-container">
+      <form id="complaintForm">
+        <input type="text" id="userId" placeholder="Enter User ID" required>
+        <input type="text" id="userComplaint" placeholder="Your Complaint" required>
+        <button type="submit">Submit Complaint</button>
+      </form>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Complaint</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="complaintTable">
+        <tr>
+          <td colspan="3">No complaints yet.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="footer">
+      &copy; 2024 Hostel Nest | All Rights Reserved
+    </div>
+  </div>
+
+  <script src="complain.js"></script>
+</body>
+</html>
